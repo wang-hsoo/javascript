@@ -116,24 +116,24 @@
 
 
 
-// let products = [
-//
-//   {name : '바나나', price : 1200},
-//   {name : '사과', price : 1200},
-//   {name : '배', price : 3200},
-//   {name : '고구마', price : 200},
-//   {name : '감자', price : 600},
-//   {name : '수박', price : 5000},
-// ];
-//
-//
-// function printProduct(product){
-//   console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
-// }
-//
-// for(let product of products){
-//   printProduct(product);
-// }
+let products = [
+
+  {name : '바나나', price : 1200},
+  {name : '사과', price : 1200},
+  {name : '배', price : 3200},
+  {name : '고구마', price : 200},
+  {name : '감자', price : 600},
+  {name : '수박', price : 5000},
+];
+
+
+function printProduct(product){
+  console.log(`${product.name}의 가격은 ${product.price}원입니다.`);
+}
+
+for(let product of products){
+  printProduct(product);
+}
 
 
 // function Product(name, price){
@@ -188,26 +188,26 @@
 // console.log(typeof(null));
 
 
-let zeroNumber = 0;
-let falseBoolean = '';
-let emptyasString = '';
-let undefinedValue;
-let nullValue = null;
-
-if( zeroNumber == null )
-  console.log('0은 존재하지 않는 값입니다');
-
-if (falseBoolean == null) {
-  console.log('false은 존재하지 않는 값입니다');
-}
-
-
-if( emptyasString == null )
-  console.log('빈 문자열은 존재하지 않는 값입니다');
-
-if (undefinedValue == null) {
-  console.log('undefined은 존재하지 않는 값입니다');
-}
-
-if( nullValue == null )
-  console.log('null은 존재하지 않는 값입니다');
+// let zeroNumber = 0;
+// let falseBoolean = '';
+// let emptyasString = '';
+// let undefinedValue;
+// let nullValue = null;
+//
+// if( zeroNumber == null )
+//   console.log('0은 존재하지 않는 값입니다');
+//
+// if (falseBoolean == null) {
+//   console.log('false은 존재하지 않는 값입니다');
+// }
+//
+//
+// if( emptyasString == null )
+//   console.log('빈 문자열은 존재하지 않는 값입니다');
+//
+// if (undefinedValue == null) {
+//   console.log('undefined은 존재하지 않는 값입니다');
+// }
+//
+// if( nullValue == null )
+//   console.log('null은 존재하지 않는 값입니다');
