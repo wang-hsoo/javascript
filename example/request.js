@@ -1,10 +1,10 @@
-// const request = require('request');
-//
-// //const url = 'https://www.hanbit.co.kr/store/books/new_book_list.html';
-// const url = 'https://www.enuri.com';
-// request(url , (error, response, body) => {
-//   console.log(body);
-// });
+const request = require('request');
+
+// const url = 'https://www.hanbit.co.kr/store/books/new_book_list.html';
+const url = 'https://www.enuri.com';
+request(url , (error, response, body) => {
+  console.log(body);
+});
 
 
 
@@ -38,22 +38,22 @@
 //     });
 //   });
 // });
-
-const fs = require('fs');
-const async = require('async');
-
-async.parallel({
-  fileA: (callback) => {
-    fs.readFile('fileA.txt', callback);
-  },
-  fileB: (callback) => {
-    fs.readFile('fileB.txt', callback);
-  },
-  fileC: (callback) => {
-    fs.readFile('fileC.txt', callback);
-  }
-},(error, results) => {
-  console.log(results.fileA);
-  console.log(results.fileB);
-  console.log(results.fileC);
-});
+//
+// const fs = require('fs');
+// const async = require('async');
+//
+// async.parallel({
+//   fileA: (callback) => {
+//     fs.readFile('fileA.txt', callback);
+//   },
+//   fileB: (callback) => {
+//     fs.readFile('fileB.txt', callback);
+//   },
+//   fileC: (callback) => {
+//     fs.readFile('fileC.txt', callback);
+//   }
+// },(error, results) => {
+//   console.log(results.fileA);
+//   console.log(results.fileB);
+//   console.log(results.fileC);
+// });
