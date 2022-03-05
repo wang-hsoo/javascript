@@ -3,6 +3,8 @@ $(window).ready(function() {
     var typingCheck = false;
     var typingIdx = 0;
     var typingTxt = $(".typing").text();
+    var del = -1;
+    var tyInt = null;
 
     if(typingCheck == false){
         typingCheck = true;
@@ -14,11 +16,27 @@ $(window).ready(function() {
         if(typingIdx < typingTxt.length){
             ttt.append(typingTxt[typingIdx]);
             typingIdx++
+            if(typingIdx  == typingTxt.length){
+                clearInterval(tyInt);
+                setTimeout(function(){
+                    tyInt = setInterval(typing,200);
+                }, 1000);
+            }
         }else{
-            clearInterval(tyInt);
-        }
+            if(-typingTxt.length -1 < del){
+                $(".ttt").html(typingTxt.slice(0, del));
+                del--;
+            }else{
+                typingIdx=0;
+                del= -1;
+
+                clearInterval(tyInt);
+                setTimeout(function(){
+                tyInt = setInterval(typing,200);
+                },1000);
+            }
     }
-});
+}});
 
 $(window).ready(function() {
     var typingBool = false; 
