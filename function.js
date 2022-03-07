@@ -217,14 +217,14 @@ b = function () {console.log("1");};
 b();
 */
 
-// function b() {console.log("1");};
-// function b() {console.log("2");};
-//
-// b();
+function b() {console.log("1");};
+function b() {console.log("2");};
 
-// (function(){
-//   console.log(this);
-// })();
+b();
+
+(function(){
+  console.log(this);
+})();
 
 (() => {
   console.log(this);
